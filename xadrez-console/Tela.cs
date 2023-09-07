@@ -9,6 +9,11 @@ namespace xadrez_console
     {
         public static void imprimirPartida(PartidaDeXadrez partida)
         {
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+            }
+            Console.WriteLine();
             imprimirTabuleiro(partida.tab);
             Console.WriteLine();
             imprimirPecasCapturadas(partida);
